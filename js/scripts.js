@@ -1,12 +1,13 @@
+alert("hello");
 $(document).ready(function() {
   $("#formLetter").submit(function(event) {
     const firstNameInput = $("input#firstName").val();
     const lastNameInput = $("input#lastName").val();
 
     $(".firstName").text(firstNameInput);
-    $(".lastName").text(LastNameInput);
+    $(".lastName").text(lastNameInput);
 
-    $("letter").show();
+    $("#letter").show();
 
     event.preventDefault();
   }); 
